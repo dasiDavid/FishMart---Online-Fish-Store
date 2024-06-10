@@ -1,0 +1,10 @@
+{%extends 'layout.html' %}
+{% load static %}
+
+{%block title_block %}
+Home
+{%endblock%}
+
+{%block body_block %}
+<img src="{% static 'book_pictures/logo.jpg' %}" class="center-image" alt="{{ book.title }}" >
+{%endblock%}

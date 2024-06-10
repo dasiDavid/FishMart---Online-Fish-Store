@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>
+        {%block title_block %}
+        {%endblock%}
+    </title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+
+<h1>Welcome To Our Library👍</h1>
+{%include 'ToolBar.html' %}
+{%block body_block %}
+<h3>From Layout</h3>
+{%endblock%}
+</body>
+</html>
